@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+:root{
+    --color1: #F9F3DF;
+    --color2: #FDFCE5;
+    --color3: #D7E9F7;
+    --color4: #F4D19B;
+    --color5: #79B4B7;
+    --color6: #FEFBF3;
+    --color7: #F8F0DF;
+    --color8: #9D9D9D;
+    --color9: #000000;
+    --color10: #ffff;
+}
+body{
+    font-family: 'Sunflower', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color1);
+}
+.open-content{
+    padding: 30px 250px;
+    background-color:var(--color7);
+}
+.imgs-content{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    grid-column: 2 / -1;
+}
+.imgs{
+    border-radius: 5px;
+    height: 100%;
+}
+.imgs img{
+    object-fit: cover;
+    border-radius: inherit;
+    width: 100%;
+    height: 90%;
+}
+.imgs p{
+font-size: small;
+}
+
+/* footer */
+.footer{
+    background-color: var(--color9);
+    padding: 20px 20px;
+}
+.logo-footer{
+    color: var(--color10);
+    width: 250px;
+}
+.sub-text-logo{
+    font-size: x-small;
+    color: var(--color10);
+}
+.infor-icon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 205px;
+}
+.infor-icon ion-icon{
+    color: var(--color10);
+    margin-top: 20px;
+}
