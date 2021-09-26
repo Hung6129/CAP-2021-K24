@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
 
+
+/* variable */
 :root{
     --color1: #F9F3DF;
     --color2: #FDFCE5;
@@ -12,15 +14,34 @@
     --color9: #000000;
     --color10: #ffff;
 }
+
+/* body */
 body{
     font-family: 'Sunflower', sans-serif;
     padding: 0;
     margin: 0;
     background-color: var(--color1);
 }
+
+/* header */
+.header{
+    background-color: var(--color6);
+    padding: 50px 50px;
+}
+.header .logo{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+/* content */
 .open-content{
     padding: 30px 250px;
     background-color:var(--color7);
+}
+.intro-content p{
+    font-size: large;
 }
 .imgs-content{
     padding: 20px 50px;
