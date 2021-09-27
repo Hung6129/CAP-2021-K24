@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/side-bar/style.css">
+
+</head>
+<body>
+
+    <!-- side-bar -->
+    <div class="side-bar">
+        <div class="logo-name">
+            <i class='bx bxl-drupal'></i>
+            <span>
+                Drugs Information Management
+            </span>
+        </div>
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-dashboard'></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-extension'></i></span>
+                    <span class="title">Extensions</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-user-account' ></i></span>
+                    <span class="title">Accounts</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-bar-chart'></i></span>
+                    <span class="title">Charts</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        //active select item
+        let items = document.querySelectorAll('.list');
+        for(let i=0; i<items.length; i++){
+            items[i].onclick = function(){
+            let j = 0;
+            while(j < items.length){
+                items[j++].className = 'list';
+            }
+            items[i].className = 'list active';
+            }
+        }
+    </script>
+</body>
+</html>
