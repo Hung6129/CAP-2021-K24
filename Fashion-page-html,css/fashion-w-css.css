@@ -168,9 +168,20 @@ font-size: small;
     .nav-list{
         padding: 20px 50px;
     }
+    .sub-text-logo{
+        font-size: x-small;
+        color: var(--color10);
+        width: 200px;
+    }
+    .infor-icon{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        width: 100px;
+    }
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .imgs-content{
         grid-template-columns: repeat(1,1fr);
     }
@@ -182,5 +193,9 @@ font-size: small;
     }
     .nav-list{
         padding: 20px 0;
+    }
+    .imgs p{
+        font-size: medium;
+        text-align: center;
     }
 }
