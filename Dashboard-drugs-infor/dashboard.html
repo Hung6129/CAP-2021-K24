@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Side Bar</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/Dashboard-drugs-infor/side-bar/">
+    <link rel="stylesheet" href="/Dashboard-drugs-infor/dashboard.css">
 
 </head>
 <body>
@@ -16,36 +16,82 @@
         <div class="logo-name">
             <i class='bx bxl-drupal'></i>
             <span>
-                Drugs Information Management
+                Thuốc
             </span>
         </div>
-        <ul>
-            <li class="list active">
-                <a href="#">
-                    <span class="icon"><i class='bx bxs-dashboard'></i></span>
-                    <span class="title">Dashboard</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#">
-                    <span class="icon"><i class='bx bxs-extension'></i></span>
-                    <span class="title">Extensions</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#">
-                    <span class="icon"><i class='bx bxs-user-account' ></i></span>
-                    <span class="title">Accounts</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#">
-                    <span class="icon"><i class='bx bx-bar-chart'></i></span>
-                    <span class="title">Charts</span>
-                </a>
-            </li>
-        </ul>
+        <div class="toggle">
+            <i class='bx bx-menu-alt-right'></i>
+        </div> 
+        <div class="list-side-items">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon"><i class='bx bxs-dashboard'></i></span>
+                        <span class="title">Trung Tâm</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><i class='bx bxs-extension'></i></span>
+                        <span class="title">Mở Rộng</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><i class='bx bxs-user-account' ></i></span>
+                        <span class="title">Tài Khoản</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><i class='bx bx-bar-chart'></i></span>
+                        <span class="title">Đồ Thị</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <!-- main -->
+    <div class="main">
+
+        <!-- header -->
+        <div class="header">
+            <div class="header-items">
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <div class="top-5-trend-search">
+                <div class="box-title">
+                    <p>
+                        Top thuốc được tìm kiếm nhiều nhất
+                    </p>
+                </div>
+            </div>
+            <div class="user-access">
+                <div class="box-title">
+                    <p>
+                        Số lượng người truy cập
+                    </p>
+                </div>
+            </div>
+            <div class="top-5-trend-search">
+                <div class="box-title">
+                    <p>
+                        Top thuốc được tìm kiếm nhiều nhất
+                    </p>
+                </div>
+            </div>
+            <div class="user-access">
+                <div class="box-title">
+                    <p>
+                        Số lượng người truy cập
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
     <script>

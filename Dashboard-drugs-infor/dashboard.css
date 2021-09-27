@@ -1,27 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+/* variables */
+:root{
+    --color-main: #C6D57E;
+    --color-main-2: #D57E7E;
+    --color-main-3: #A2CDCD;
+    --color-main-4: #FFE1AF;
+    --color-black: #000000;
+    --color-white: #ffff;
+    --color-new-1:#32502E;
+    --color-new-2:#406343;
+    --color-new-3:#ECE7B4;
+    --color-new-4:#F3EFCC;
+}
+
+
+/* body */
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: var(--color-new-3);
+    /* padding: 0; */
+    /* background-color: #FFE1AF; */
 }
+
+
+/* side-bar */
 .side-bar{
     position: fixed;
     top: 20px;
     left: 20px;
     bottom: 20px;
-    width: 100px;
+    width: 300px;
     border-radius: 10px;
-    border-left: 5px solid #C6D57E ;
-    background: #C6D57E;
+    /* border-left: 5px solid #C6D57E ; */
+    background: var(--color-new-2);
     transition: width 0.5s;
 }
 .logo-name{
     display: flex;
-    color: white;
+    color: var(--color-white);
     padding: 20px;
     justify-content: center;
     align-items: center;
 }
+.toggle{
+    cursor: pointer;
+    font-size: 2.5em;
+    color: var(--color-white);
+    position: relative;
+    left: 50%;
+}
+/* .toggle i{
+    
+} */
 .side-bar .logo-name i{
-    font-size: 5em;
+    font-size: 7em;
 }
 .side-bar .logo-name span{
     font-weight: bold;
@@ -29,11 +63,9 @@ body{
 }
 .side-bar ul{
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
-    padding-left: 5px;
-    padding-top: 100px;
+    padding-left: 10px;
 }
 .side-bar ul li{
     list-style: none;
@@ -70,10 +102,59 @@ body{
     font-size: large;
 }
 .side-bar .active{
-    background-color: white;
+    background-color: var(--color-new-3);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
 }
 .side-bar .active a{
+    color: var(--color-new-2);
+}
+.side-bar ul .toggle{
     color: #C6D57E;
+    background-color: white;
+    font-size: 3em;
+    
+}
+
+
+/* main-content-footer-boxes-header */
+.main{
+    margin-left: 340px;   
+}
+.header{
+    height: 100px;
+    background-color: var(--color-new-2);
+    border-radius: 10px;
+}
+.header .header-items p{
+    color: white;
+}
+.content{
+    padding: 10px 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 20px;
+}
+.top-5-trend-search{
+    width: 300px;
+    height: 200px;
+    background-color: var(--color-new-4);
+    border-radius: 10px;
+}
+.top-5-trend-search .box-title p{
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+.user-access{
+    width: 300px;
+    height: 200px;
+    background-color: var(--color-new-4);
+    border-radius: 10px;
+}
+.user-access .box-title p{
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
 }
