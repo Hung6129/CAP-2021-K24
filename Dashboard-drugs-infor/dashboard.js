@@ -79,8 +79,9 @@ Highcharts.chart('container-bar', {
     }]
 });
 
-// pie
 
+
+// pie
 Highcharts.chart('container-pie', {
     chart: {
         plotBackgroundColor: null,
