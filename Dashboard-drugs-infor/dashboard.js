@@ -80,6 +80,7 @@ Highcharts.chart('container-bar', {
 });
 
 // pie
+
 Highcharts.chart('container-pie', {
     chart: {
         plotBackgroundColor: null,
