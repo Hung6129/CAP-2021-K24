@@ -162,11 +162,29 @@ body{
     background-color: var(--color-new-2);
     border-radius: 10px;
 }
-.header .toggle{
+/* .spin{
     font-size: 3em;
     color: var(--color-new-3);
     padding: 20px;
+    position: absolute;
+    display: none;
 }
+.toggle{
+    font-size: 3em;
+    color: var(--color-new-3);
+    padding: 20px;
+    position: absolute;
+    transition: 1.5s;
+}
+.toggle:hover{
+    display: none;
+}
+.spin:hover{
+    font-size: 3em;
+    color: var(--color-new-3);
+    padding: 20px;
+    position: absolute;
+} */
 
 
 
